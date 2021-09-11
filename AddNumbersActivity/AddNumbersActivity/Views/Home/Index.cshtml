@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="content">
+    <h3>@ViewBag.Message </h3>
+</div>
+
+
+@Html.ActionLink("Add Numbers",@*LinkText*@
+"Index", //action name
+"AddNumbers", // controller name
+new {  @num1=5, @num2=3 }, null)@*htmlAttributes*@
